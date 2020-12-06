@@ -13,12 +13,12 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
     res.render("home");
-})
+});
 
 app.get("/register", (req, res) => {
     res.render("register");
-})
+});
 
 app.listen(port, (req, res) => {
     console.log(`I'm listening http://${host}:${port}`)
-})
+});
